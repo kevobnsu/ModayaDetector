@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Modaya detector By ManindraS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="tracking-min.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+
+    <audio src="b.wav" id="sound" autostart="false"></audio>
+
+
+    <div class="display">
+      <video id="webcam" width="1024" height="768" autoplay></video>
+      <canvas id="canvas" width="640" height="480"></canvas>
+    </div>
+
+    <div class="ui">
+
+      <div class="controls">
+
+        <p>Click on the webcam feed to pick a color, then adjust tolerance.</p>
+
+        <div>
+          <label for="tolerance">Tolerance:</label>
+          <input id="tolerance" type="range" value="50" max="255" min="0" step="1">
+        </div>
+
+      </div>
+
+      <div id="color"></div>
+      
+    </div>
+
+  </body>
+
+</html>
